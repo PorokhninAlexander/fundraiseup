@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "removeComments": true,
+    "target": "es2020"
+  },
+  "exclude": ["node_modules"],
+}
