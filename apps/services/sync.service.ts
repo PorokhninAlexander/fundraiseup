@@ -27,11 +27,6 @@ export default async (openedPid?: number): Promise<void> => {
         [{ $match: { operationType: { $in: ['insert', 'update'] } } }],
         { fullDocument: 'updateLookup' }
     ).on('change', async (data) => {
-        if (data.operationType === 'update') {
-            console.log('-----------------------------------------')
-            console.log(data)
-            return
-        }
         updatesArray.push({
             updateOne: {
                 filter: {
